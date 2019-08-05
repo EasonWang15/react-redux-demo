@@ -8,9 +8,9 @@ class RouterMap extends Component {
         return (
             <Router>
                 <Switch>
-                    <Redirect form="/" to="/add"></Redirect>
                     <Route path='/home' component={ Home }></Route>
                     <Route path='/add' component={ Add }></Route>
+                    <Redirect exact form="/" to="/add"></Redirect>
                 </Switch>
             </Router>
         )
